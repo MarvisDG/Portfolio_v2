@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* @theme {
+	--breakpoint-xs: 30rem;
+	--breakpoint-2xl: 100rem;
+	--breakpoint-3xl: 120rem;
+} */
+
+header {
+	padding: 0;
+	margin: 0;
+	background-color: #000000;
+	/* background-image: url('..\src\assets\ko2.jpg'); */
+	background-repeat: no-repeat;
+	background-size: 90%;
+	/* filter: brightness(.2); */
+	/* opacity: .2; */
+	background-position: right;
+	background-position-y: -95px;
+	background-position-x: 400%;
+	position: relative;
+	min-height: 70vh;
+	z-index: 133;
+}
+
+@media 425px {
+	.text_sm_res{
+		top: 0; 
+		border: 2px solid red;
+	
+	}
+}
