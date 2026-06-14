@@ -60,35 +60,35 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://umohmarvelous.dev'),
   title: {
-    default: 'Umoh Marvelous | Fullstack Developer',
+    default: 'Umoh Marvelous | Premium Fullstack Developer',
     template: '%s | Umoh Marvelous',
   },
   description:
-    'Umoh Marvelous Sunday — Fullstack developer based in Nigeria specialising in React, Next.js, and Node.js. Available for freelance projects and full-time roles.',
+    'Umoh Marvelous — Premium fullstack developer crafting fast, accessible, and memorable digital products. React, Next.js, Node.js specialist. Available for projects.',
   keywords: [
     'Umoh Marvelous',
     'Fullstack Developer Nigeria',
     'React Developer',
     'Next.js Developer',
-    'Frontend Developer Warri',
-    'Web Developer Delta State',
+    'Frontend Developer',
+    'Web Developer',
     'Portfolio',
   ],
-  authors: [{ name: 'Umoh Marvelous Sunday', url: 'https://umohmarvelous.dev' }],
-  creator: 'Umoh Marvelous Sunday',
+  authors: [{ name: 'Umoh Marvelous', url: 'https://umohmarvelous.dev' }],
+  creator: 'Umoh Marvelous',
   openGraph: {
     type: 'website',
     locale: 'en_NG',
     url: 'https://umohmarvelous.dev',
     siteName: 'Umoh Marvelous Portfolio',
-    title: 'Umoh Marvelous | Fullstack Developer',
-    description: 'Crafting fast, accessible, and memorable digital products. 4 years building things people actually use.',
+    title: 'Umoh Marvelous | Premium Fullstack Developer',
+    description: 'Crafting fast, accessible, and memorable digital products. 4+ years building things people actually use.',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Umoh Marvelous Portfolio' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Umoh Marvelous | Fullstack Developer',
-    description: 'Crafting fast, accessible digital products with React & Next.js.',
+    description: 'Premium digital products with React & Next.js.',
     images: ['/og-image.png'],
   },
   robots: {
@@ -108,7 +108,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#050505',
+  themeColor: '#dadbd5',
   width: 'device-width',
   initialScale: 1,
 }
@@ -144,7 +144,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-sans antialiased bg-[#050505] text-white selection:bg-[#00ff00]/20 selection:text-[#00ff00]">
+      <body className="font-sans antialiased bg-[#dadbd5] text-black">
         {children}
       </body>
     </html>

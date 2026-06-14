@@ -13,13 +13,11 @@ const colors = ['#202e32', '#85937a', 'green', '#000', 'transparent', ];
 
 export default function LiquidGlass({ children, className = '', colorIndex }: LiquidGlassProps) {
   // Use provided colorIndex or assign based on variant
-  const bgColor = useMemo(() => {
+  useMemo(() => {
     if (colorIndex !== undefined) {
       return colors[0];
       // return colors[colorIndex % colors.length];
     }
-  
-
   }, [ colorIndex]);
 
 

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 const GITHUB_USERNAME = 'Umohmarvelous';
 // You need to create a GitHub personal access token (PAT) with public access
 // and set it here. NEVER commit your token to a public repo!
-const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
+const GITHUB_TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN || '';
 
 const QUERY = `
   query {
