@@ -9,12 +9,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-mono)', 'Courier New', 'monospace'],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
+      backgroundImage: {
+        'gradient-neon': 'linear-gradient(135deg, #00ff00, #00c8ff)',
+      },
       colors: {
+        green: { neon: '#00ff00' },
+        cyan: { neon: '#00c8ff' },
         background: "var(--background)",
         foreground: "var(--foreground)",
         card: {
